@@ -7,12 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mark Antony</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css">
   </head>
   
   <body>
 	<script src="index.js"></script>
 
     <div id="header">
+        <img src="assets/mark1.png" alt="Man in glasses">
         <p class="name">Mark Antony</p>
         <ul class="navlist">
             <li>Home</li>
@@ -22,13 +24,15 @@
             <li>Portfolio</li>
             <li>Reviews</li>
         </ul>
-        <a href="mailto:info@markanthony.com" id="contact" class="button">Contact Me</a>
+        <button><a href="mailto:info@markanthony.com" id="contact" class="button">Contact Me</a></button>
+        
     </div>
 
     <div id="home">
         <p>Hello, I am</p>
         <p class="first">Mark Antony</p>
         <p>Ux Designer and Developer</p>
+        <button>Get Started</button>
     </div>
 
     <div id="services">
@@ -48,18 +52,105 @@
         </div> 
     </div>
 
-    <div id="story"></div>
+    <div id="story">
+        <h2>Watch My Story</h2>
+        <img src="assets/mark.png" alt="Man looking at phone">
+        <!-- <video src="video.mp4" alt="Marks Story" controls>Your browser does not support the video tag.</video> -->
+    </div>
 
     <div id="skills">
         <h2>My Skills</h2>
             <p>I am using various digital tools for my services. Most are adobe product. Check out my skill level from below graphs.</p>
-        <ul class="skillslist">
-            <li>Adobe xd</li>
-            <li>Adobe Illustrator</li>
-            <li>Adobe Photoshop</li>
-            <li>Adobe Indesign</li>
-            <li>Adobe After Effects</li>
-        </ul>
+
+            <div class="single-chart">
+                <svg viewBox="0 0 36 36" class="circular-chart red">
+                  <path class="circle-bg"
+                    d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831"
+                  />
+                  <path class="circle"
+                    stroke-dasharray="75, 100"
+                    d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831"
+                  />
+                  <text x="18" y="20.35" class="percentage">75%</text>
+                </svg>
+                <p>Adobe xd</p>
+              </div>
+
+            <div class="single-chart">
+                <svg viewBox="0 0 36 36" class="circular-chart purple">
+                  <path class="circle-bg"
+                    d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831"
+                  />
+                  <path class="circle"
+                    stroke-dasharray="70, 100"
+                    d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831"
+                  />
+                  <text x="18" y="20.35" class="percentage">70%</text>
+                </svg>
+                <p>Adobe Illustrator</p>
+              </div>
+            
+              <div class="single-chart">
+                <svg viewBox="0 0 36 36" class="circular-chart blue">
+                  <path class="circle-bg"
+                    d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831"
+                  />
+                  <path class="circle"
+                    stroke-dasharray="95, 100"
+                    d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831"
+                  />
+                  <text x="18" y="20.35" class="percentage">95%</text>
+                </svg>
+                <p>Adobe Photoshop</p>
+              </div>
+
+              <div class="single-chart">
+                <svg viewBox="0 0 36 36" class="circular-chart green">
+                  <path class="circle-bg"
+                    d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831"
+                  />
+                  <path class="circle"
+                    stroke-dasharray="60, 100"
+                    d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831"
+                  />
+                  <text x="18" y="20.35" class="percentage">60%</text>
+                </svg>
+                <p>Adobe Indesign</p>
+              </div>
+              
+              <div class="single-chart">
+                <svg viewBox="0 0 36 36" class="circular-chart orange">
+                  <path class="circle-bg"
+                    d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831"
+                  />
+                  <path class="circle"
+                    stroke-dasharray="85, 100"
+                    d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831"
+                  />
+                  <text x="18" y="20.35" class="percentage">85%</text>
+                </svg>
+                <p>Adobe After Effects</p>
+              </div>
     </div>
 
     <div id="portfolio">
