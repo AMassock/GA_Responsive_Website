@@ -1,6 +1,6 @@
-/* * {
+* {
     border: 2px solid red;
-} */
+}
 
 body {
     text-align: center;
@@ -97,6 +97,19 @@ a {
     margin: 0px 0px 0px;
 }
 
+#service {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    /* grid-template-columns: 100px 50px 50px; */
+    grid-template-rows: 2fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+h5 {
+
+}
+
 .single-chart {
     display: inline-flex;
     width: 13%;
@@ -162,4 +175,17 @@ a {
     margin: 120px 15px 50px;
     padding: 0px 15px 0px;
     max-width: 136px;
+}
+
+#photos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: stretch;
+}
+
+.photo {
+    margin: auto;
+    padding: 5px;
+    justify-content: stretch;
 }
