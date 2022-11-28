@@ -1,6 +1,6 @@
-/* * {
+* {
     border: 2px solid red;
-} */
+}
 
 body {
     text-align: center;
@@ -221,3 +221,39 @@ h5 {
     grid-template-columns: 2fr 1fr 1fr 1fr;
     justify-content: space-between;
 }
+
+@media screen and (max-width: 576px) {
+
+    body {
+        max-width: 576px;
+        font-size: 36px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        place-items: center;
+    }
+
+    div {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    img {
+        max-width: 1vh;
+    }
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media screen and (min-width: 768px) {
+    ...;
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media screen and (min-width: 992px) {
+    ...;
+  }
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media screen and (min-width: 1200px) {
+    ...;
+  }
