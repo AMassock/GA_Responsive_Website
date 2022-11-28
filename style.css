@@ -1,10 +1,12 @@
-* {
+/* * {
     border: 2px solid red;
-}
+} */
 
 body {
     text-align: center;
     font-family: 'Roboto', sans-serif;
+    max-width: 1600px;
+    margin: auto;
 }
 
 ul {
@@ -23,6 +25,7 @@ button {
     text-decoration: none;
     padding: 18px 48px 18px;
     font-size: 16px;
+    border: none;
 }
 
 a {
@@ -75,6 +78,19 @@ a {
     margin-left: 700px;
 }
 
+.story {
+    color: white;
+    display: inline-flex;
+    justify-content: left;
+    flex-wrap: nowrap;
+    position: relative;
+}
+
+.img {
+    position: absolute;
+    z-index: 0;
+}
+
 .first {
     color: white;
     font-size: 46px;
@@ -84,7 +100,7 @@ a {
 .single-chart {
     display: inline-flex;
     width: 13%;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
 .circular-chart {
@@ -140,9 +156,10 @@ a {
     text-anchor: middle;
 }
 
-.imagestack {
-    display: grid;
-    grid-template-columns: 12, 1fr;
-    grid-column: 1 / span 1;
-    position: relative;
+.product {
+    position: absolute;
+    justify-content: space-around;
+    margin: 120px 15px 50px;
+    padding: 0px 15px 0px;
+    max-width: 136px;
 }
